@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: httpd:latest
+    container_name: BORA_BILL
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
